@@ -20,8 +20,9 @@ public class TestStringBuilder {
 		while(true){
 			aux = in.next();
 			if(aux.equalsIgnoreCase("quit")) break ;
+			if(Auxiliar.requisitos(aux)) sBuilder.append(aux+" ");
 			//añadimos al stringbuilder aqui para no añadir quit
-			sBuilder.append(aux+" ");
+			
 			
 	
 		}
