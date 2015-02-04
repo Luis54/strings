@@ -20,7 +20,11 @@ public class TestStringBuilder {
 		while(true){
 			aux = in.next();
 			if(aux.equalsIgnoreCase("quit")) break ;
+			//falta crear un filtro, si cumple requisito se añade
 			if(Auxiliar.requisitos(aux)) sBuilder.append(aux+" ");
+			else{
+				System.out.println("La palabra introducida no es valida");
+			}
 			//añadimos al stringbuilder aqui para no añadir quit
 			
 			
